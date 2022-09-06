@@ -11,6 +11,36 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
       rel="stylesheet"
     />
+    <script src="./js/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Html Mobile First -->
+    <div class="overlay" data-overlay></div>
+
+    <!-- MODAL -->
+    <div class="modal" data-modal>
+      <div class="modal-close-overlay" data-modal-overlay></div>
+      <!--Newsletter content -->
+      <div class="modal-content">
+        <button class="modal-close-btn" data-modal-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div class="newsletter-img">
+          <img
+            src="./assets/images/newsletter.png"
+            alt="subscribe newsletter"
+            width="400"
+            height="400"
+          />
+        </div>
+        <div class="newsletter"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.0.3/esm/ionicons.min.js"
+      integrity="sha512-qFRjtFs1SsmZHbyvBqGiM8idmNed7AmDUkHHhRSR6JD1sSmv7HsQtdVeQ2jVuTCzcstSIcd+l/2DlGEl58dMRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
 </html>
