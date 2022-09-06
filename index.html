@@ -11,10 +11,18 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./js/script.js"></script>
   </head>
   <body>
     <!-- Html Mobile First -->
+    <!-- active -->
     <div class="overlay" data-overlay></div>
 
     <!-- MODAL -->
@@ -22,8 +30,9 @@
       <div class="modal-close-overlay" data-modal-overlay></div>
       <!--Newsletter content -->
       <div class="modal-content">
-        <button class="modal-close-btn" data-modal-close>
-          <ion-icon name="close-outline"></ion-icon>
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <i class="fa fa-xmark" aria-hidden="true"></i>
+          <!-- <ion-icon name="close-outline"></ion-icon> -->
         </button>
         <div class="newsletter-img">
           <img
@@ -33,7 +42,25 @@
             height="400"
           />
         </div>
-        <div class="newsletter"></div>
+        <div class="newsletter">
+          <form action="#">
+            <div class="newsletter-header">
+              <h3 class="newsletter-title">Subscribe Newsletter</h3>
+              <p class="newsletter-desc">
+                Subscribe the <b>Anon</b> to get latest products and discount
+                update.
+              </p>
+            </div>
+            <input
+              type="email"
+              name="email"
+              class="email-field"
+              placeholder="Email Address"
+              required
+            />
+            <button type="submit" class="btn-newsletter">Subscribe</button>
+          </form>
+        </div>
       </div>
     </div>
     <script
