@@ -253,4 +253,26 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .email-field {
+  font-size: var(--fs-7);
+  padding: 8px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--cultured);
+  margin-bottom: 16px;
+}
+
+/* subscribe*/
+.btn-newsletter {
+  background: var(--eerie-black);
+  color: var(--white);
+  font-size: var(--fs-7);
+  font-weight: var(--weght-600);
+  text-transform: uppercase;
+  padding: 10px 15px; /*epaisseur du button pas de heigh et width*/
+  border-radius: var(--border-radius-sm);
+  margin: auto;
+  transition: var(--transitio-timing);
+}
+
+.btn-newsletter:hover {
+  background: var(--salmon-pink);
 }
