@@ -3,7 +3,6 @@
   /**
    * colors
    */
-
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
   --eerie-black: hsl(0, 0%, 13%);
@@ -104,6 +103,7 @@ body {
   background: var(--white);
 }
 
+/*----------  Subsection comment block  ----------*/
 /*
 Le pseudo-élément ::-webkit-scrollbar 
 permet de modifier le style de la barre de défilement associée à un élément. 
@@ -125,9 +125,12 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+/* erreur ici*/
 body::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 70%);
 }
+
+/*----------  Subsection comment block  ----------*/
 
 /*Reused style*/
 
@@ -153,7 +156,10 @@ body::-webkit-scrollbar-thumb:hover {
   pointer-events: all; /* */
 }
 
-/*----------  Modal  ----------*/
+/*=============================================
+=            Modal            =
+=============================================*/
+/* modifie ici */
 .modal {
   border: 4px solid red;
   position: fixed;
@@ -165,13 +171,14 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*opacity: 0;
-  visibility: hidden;
-  pointer-events: none;*/
-  z-index: 10;
-  /*animation: popup 1s ease-in-out 5s forwards;*/
-}
 
+  /*modal hidden*/
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
+  z-index: 10;
+  animation: popup 1s ease-in-out 5s forwards;
+}
 @keyframes popup {
   0% {
     opacity: 0;
@@ -184,10 +191,15 @@ body::-webkit-scrollbar-thumb:hover {
     pointer-events: all;
   }
 }
-
-.modal-closed {
+/* ferme le modal */
+.modal.closed {
   display: none;
 }
+/**
+ *
+ * Modal 
+ *
+ */
 
 /*Closed position*/
 .modal-close-overlay {
@@ -202,6 +214,7 @@ body::-webkit-scrollbar-thumb:hover {
 .newsletter-img {
   display: none;
 }
+/* modifie ici */
 .modal-content {
   border: 4px solid green;
   position: relative;
@@ -252,7 +265,6 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: var(--fs-7);
   line-height: 1.6;
 }
-
 .email-field {
   font-size: var(--fs-7);
   padding: 8px;
@@ -260,7 +272,6 @@ body::-webkit-scrollbar-thumb:hover {
   border: 1px solid var(--cultured);
   margin-bottom: 16px;
 }
-
 /* subscribe*/
 .btn-newsletter {
   background: var(--eerie-black);
@@ -273,7 +284,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin: auto;
   transition: var(--transitio-timing);
 }
-
 .btn-newsletter:hover {
   background: var(--salmon-pink);
 }
+/*=====  End of Modal  ======*/
